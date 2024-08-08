@@ -6,6 +6,7 @@ import PrestationsPage from "../pages/PrestationsPage";
 import AstroSignPage from "../pages/AstroSignPage";
 import DisclaimerPage from "../pages/DisclaimerPage";
 import Blog from "../pages/Blog";
+import ContactPage from "../pages/ContactPage";
 
 const AppRouter = () => {
     return (
@@ -17,7 +18,7 @@ const AppRouter = () => {
                 <Route path="/anniversaire" element={<AstroSignPage />} />
                 <Route path="/disclaimer" element={<DisclaimerPage />} />
                 <Route path="/blog" element={<Blog />} />
-                <Route path="/contact" element={<HomePage />} />
+                <Route path="/contact" element={<ContactPage />} />
             </Routes>
         </Router>
     )
