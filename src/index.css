@@ -1,13 +1,95 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  min-width: 992px;
+  max-width: 1400px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.root {
+  min-width: 992px;
+  max-width: 1400px;
+}
+
+/* Used to simplify the sizing process 
+  of a couple of elements inside a box :
+
+  Each element will be automatically resized
+  to fit into the box (here, the box's total 
+  size includes automatically every margin, 
+  border, and padding of all of its elements).
+
+  If those elements are too wide for 
+  the size of the box, they will 
+  squeeze up to each other
+  (the size of the box itself will remain the same).
+
+  The star (*) selects all the elements 
+  (in this case, before AND after the css properties 
+  are declared) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #00008B;
+  color: #fff;
+  font-family: "Lora", serif;
+  margin: 0px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+
+p,
+a {
+  font-family: "Lora", serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.nav-bar {
+  background-color: #8B008B;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  gap: 10px;
+  padding: 0px 40px;
+}
+
+.menu-option {
+  position: relative;
+  display: flex;
+  height: fit-content;
+  height: fit-content;
+  padding: 20px 10px;
+
+  a {
+    color: white;
+    border: dotted #8B008B 4px;
+    text-decoration: none;
+    padding: 5px 15px;
+  }
+
+  a:hover {
+    border: dotted #ffff00 4px;
+    background-color: indigo;
+  }
+
+  .contact-link {
+    border: dotted #ffff00 4px;
+    background-color: deeppink;
+  }
 }
