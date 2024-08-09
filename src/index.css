@@ -96,8 +96,25 @@ a {
 
 .banner-img {
   width: 100%;
-  height: 200px;
+  height: 250px;
   text-align: center;
   width: 100%;
   object-fit: cover;
+  object-position: center 57%;
+}
+
+.motivation {
+  object-position: center 29%;
+}
+
+.moon-boat {
+  object-position: center 42%;
+}
+
+.white-flowers {
+  object-position: center 52%;
+}
+
+.colza-field {
+  object-position: center 79%;
 }
