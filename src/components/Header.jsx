@@ -3,7 +3,7 @@ import HeaderPageOption from "./HeaderPageOption";
 
 function Header() {
     return (
-        <div>
+        <div className="header">
             <h1>Les GuidanSes de Mélanie</h1>
             <div className="nav-bar">
 
@@ -17,7 +17,7 @@ function Header() {
 
                 <HeaderPageOption pageUrl="/blog" pageTitle="Blog" />
                 
-                <HeaderPageOption pageUrl="/contact" pageTitle="Contact et réservation" />
+                 <HeaderPageOption pageUrl="/contact" pageTitle="Contact et réservation" optionClassName="contact-link" />
             </div>
         </div>
     )

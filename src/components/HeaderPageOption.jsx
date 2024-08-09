@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function HeaderPageOption({ pageUrl, pageTitle }) {
+function HeaderPageOption({ pageUrl, optionClassName, pageTitle }) {
     return (
         <div className="menu-option">
-            <a href={pageUrl} className="nav-option">{pageTitle}</a>
+            <a href={pageUrl} className={optionClassName}>{pageTitle}</a>
         </div>
     );
 }
