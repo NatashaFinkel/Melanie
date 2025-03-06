@@ -8,22 +8,6 @@
   max-width: 1400px;
 }
 
-/* Used to simplify the sizing process 
-  of a couple of elements inside a box :
-
-  Each element will be automatically resized
-  to fit into the box (here, the box's total 
-  size includes automatically every margin, 
-  border, and padding of all of its elements).
-
-  If those elements are too wide for 
-  the size of the box, they will 
-  squeeze up to each other
-  (the size of the box itself will remain the same).
-
-  The star (*) selects all the elements 
-  (in this case, before AND after the css properties 
-  are declared) */
 *,
 *::before,
 *::after {
@@ -35,6 +19,8 @@ body {
   color: #fff;
   font-family: "Lora", serif;
   margin: 0px;
+  letter-spacing: 2px;
+  font-size: 20px;
 }
 
 .header {
@@ -49,72 +35,58 @@ h1 {
   margin-bottom: 40px;
   font-family: "Dancing Script", cursive;
   font-weight: 900;
-  letter-spacing: 0.5px;
-  text-transform: capitalize;
 }
 
-p,
 a {
-  font-family: "Lora", serif;
-  font-size: 20px;
-  letter-spacing: 2px;
+  text-decoration: none;
 }
 
 .nav-bar {
   background-color: #8B008B;
   display: flex;
-  height: 80px;
   justify-content: center;
-  gap: 10px;
-  padding: 0px 40px;
+  gap: 5%;
+  height: 80px;
+  align-items: center;
+  box-shadow: 0px 10px 50px 5px white;
 }
 
-.menu-option {
-  position: relative;
+.menu-option .contact-link {
+  padding: 10px;
+  background-color: #00008B;
+}
+
+.menu-option a {
+  color: white;
+}
+
+.menu-option a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+main {
+  margin: 100px 100px 150px 100px;
+}
+
+.center-display {
   display: flex;
-  height: fit-content;
-  height: fit-content;
-  padding: 20px 10px;
-
-  a {
-    color: white;
-    border: dotted #8B008B 4px;
-    text-decoration: none;
-    padding: 5px 15px;
-  }
-
-  a:hover {
-    border: dotted #ffff00 4px;
-    background-color: indigo;
-  }
-
-  .contact-link {
-    border: dotted #ffff00 4px;
-    background-color: deeppink;
-  }
+  justify-content: center;
+  gap: 50px;
 }
 
-.banner-img {
-  width: 100%;
-  height: 250px;
-  text-align: center;
-  width: 100%;
+.presentation-picture {
   object-fit: cover;
-  object-position: center 57%;
+  height: fit-content;
+  position: relative;
 }
 
-.motivation {
-  object-position: center 29%;
+.presentation-txt {
+  flex-direction: column;
+  margin-left: 50px;
 }
 
-.moon-boat {
-  object-position: center 42%;
-}
-
-.white-flowers {
-  object-position: center 52%;
-}
-
-.colza-field {
-  object-position: center 79%;
+h2 {
+  font-size: 28px;
+  margin: 0px;
 }
