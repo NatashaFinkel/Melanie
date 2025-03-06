@@ -4,7 +4,7 @@ function HomePage() {
             <section className="center-display">
                 <div className="center-display">
                     <img
-                        src="/images/photo-melanie.png"
+                        src="./assets/photo-melanie.png"
                         alt="Mélanie"
                         className="presentation-picture"
                     ></img>
