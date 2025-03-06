@@ -75,6 +75,13 @@ main {
   gap: 50px;
 }
 
+.main-content {
+  flex-direction: column;
+  gap: 10px;
+  width: 65%;
+  align-items: center;
+}
+
 .presentation-picture {
   object-fit: cover;
   height: fit-content;
@@ -87,6 +94,14 @@ main {
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 25px;
   margin: 0px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 40px;
+  justify-items: center;
 }
