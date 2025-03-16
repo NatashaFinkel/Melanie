@@ -11,6 +11,7 @@ function PrestationsPage() {
                  {/* TODO: mise à jour dépendances*/}
                 {/* TODO: fichier json pour les cards */}
                  {/* TODO: composant card */}
+                 {/* TODO: ajouter footer */}
             </section>
         </main>
     );
