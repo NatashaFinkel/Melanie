@@ -1,3 +1,6 @@
+import Card from "../components/Card";
+import cardData from '../json/card-data.json';
+
 function PrestationsPage() {
     return (
         <main>
@@ -8,8 +11,9 @@ function PrestationsPage() {
                 </div>
             </section>
             <section className="center-display card-container">
-                 {/* TODO: composant card */}
+                 {/* TODO: composant Modal */}
                  {/* TODO: ajouter footer */}
+                 <Card cards={cardData}  />
             </section>
         </main>
     );
