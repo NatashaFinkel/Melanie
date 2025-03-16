@@ -9,7 +9,7 @@ function HomePage() {
                         className="presentation-picture"
                     ></img>
                 </div>
-
+                {/* TODO: faire un fichier json pour tout les textes */}
                 <div className="presentation-txt">
                     <h2>Êtes-vous prêt à transformer votre vie ?</h2>
                     <div>
