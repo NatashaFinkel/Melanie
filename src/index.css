@@ -53,7 +53,8 @@ a {
 
 .menu-option .contact-link {
   padding: 10px;
-  background-color: #00008B;
+  border: 4px dotted yellow;
+  background-color: rgba(98, 1, 95, 0.8);
 }
 
 .menu-option a {
@@ -63,6 +64,11 @@ a {
 .menu-option a:hover {
   text-decoration: underline;
   text-underline-position: under;
+}
+
+.menu-option .contact-link:hover {
+  background-color: #b800b8;
+  text-decoration: none;
 }
 
 main {
