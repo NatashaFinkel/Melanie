@@ -11,9 +11,8 @@ function PrestationsPage() {
                 </div>
             </section>
             <section className="center-display card-container">
-                 {/* TODO: composant Modal */}
-                 {/* TODO: ajouter footer */}
-                 <Card cards={cardData}  />
+                {/* TODO: ajouter footer */}
+                <Card cards={cardData} />
             </section>
         </main>
     );

@@ -1,9 +1,8 @@
 [
     {
         "id": 1,
-        "type": "Consultation :",
         "name": "Tour d'horizon, état des lieux.",
-        "cardDescription":"Pafait pour débuter.",
+        "cardDescription": "Pafait pour débuter.",
         "modalDescription": "Cette consultation se veut un résumé des divers domaines de ta vie, lorsque tu n'as pas de question précise, ou dans les périodes où tu es en maîtrise afin de repérer les tendances prochaines.",
         "imgSrc": "/assets/card-img/vision.jpg",
         "imgAlt": "Illustration de la carte 1",
@@ -12,8 +11,7 @@
     },
     {
         "id": 2,
-        "type": "Travail énergétique :",
-        "name": "Les corps subtils (partie 1)",
+        "name": "Travail énergétique : les corps subtils (partie 1)",
         "cardDescription": "D'après le protocole du docteur Luc Bodin.",
         "modalDescription": "Le travail sur les corps subtiles nettoie, harmonise et rééquilibre les chakras. Ce soin est particulièrement recommandé pour les personnes fatiguées, déprimées, ou qui ont des douleurs inexpliquées.",
         "imgSrc": "/assets/card-img/arbre-vie.jpg",
@@ -23,8 +21,7 @@
     },
     {
         "id": 3,
-        "type": "Travail énergétique :",
-        "name": "Les corps subtils (partie 2).",
+        "name": "Travail énergétique : Les corps subtils (partie 2).",
         "cardDescription": "D'après le protocole du docteur Luc Bodin.",
         "modalDescription": "Le travail sur les corps subtiles nettoie, harmonise et rééquilibre les chakras. Ce soin est particulièrement recommandé pour les personnes fatiguées, déprimées, ou qui ont des douleurs inexpliquées.",
         "imgSrc": "/assets/card-img/lotus-rose.jpg",
@@ -34,7 +31,6 @@
     },
     {
         "id": 4,
-        "type": "Consultation :",
         "name": "Voyance et guidances.",
         "cardDescription": "Travail au pendule, sur photo.",
         "modalDescription": "Cette consultation permet de répondre à une question précise grâce à l'utilisation du pendule et du tarot divinatoire.",
@@ -45,8 +41,7 @@
     },
     {
         "id": 5,
-        "type": "Soin",
-        "name": "Le soutien par les couleurs",
+        "name": "Soin : le soutien par les couleurs",
         "cardDescription": "Soin énergétique très doux",
         "modalDescription": "Ce soin permet de rééquilibrer les chakras et de réharmoniser les corps subtils. Il est particulièrement recommandé pour les personnes sensibles et les enfants. Disponible aussi pour les animaux !",
         "imgSrc": "/assets/card-img/enfant-couleurs.jpg",
@@ -56,7 +51,6 @@
     },
     {
         "id": 6,
-        "type": "Consultation :",
         "name": "Astrologie, numérologie",
         "cardDescription": "Theme astral, lecture et interprétation d'oracles.",
         "modalDescription": "Cette consultation permet de mieux se connaître, de comprendre ses forces et ses faiblesses, de mieux appréhender les périodes de changement et de transformation.",
@@ -67,7 +61,6 @@
     },
     {
         "id": 7,
-        "type": "Consultation",
         "name": "Messages de l'autre monde",
         "cardDescription": "Messages de vos guides, contact avec les défunts.",
         "modalDescription": "Vous recevez des signes, des messages, mais vous ne savez pas comment les interpréter ? Je peux vous aider à contacter vos guides, vos anges, ou vos défunts.",
@@ -78,7 +71,6 @@
     },
     {
         "id": 8,
-        "type": "Coaching",
         "name": "Coaching",
         "cardDescription": "Développement personnel, motivation, soutien.",
         "modalDescription": "Vous avez besoin d'un coup de pouce pour avancer dans votre vie, pour dépasser vos peurs, pour vous libérer de vos blocages ? Je suis là pour vous aider à trouver votre voie, à vous réaliser pleinement.",
