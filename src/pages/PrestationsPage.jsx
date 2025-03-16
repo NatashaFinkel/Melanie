@@ -12,6 +12,7 @@ function PrestationsPage() {
             </section>
             <section className="center-display card-container">
                 {/* TODO: ajouter footer */}
+                {/* TODO: faire le README */}
                 <Card cards={cardData} />
             </section>
         </main>
