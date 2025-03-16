@@ -18,7 +18,6 @@ function HomePage() {
                             années; vous sentez vos dons de perception croître.
                         </p>
                         <p>
-                            {" "}
                             Il vous manque cependant des réponses à certains de vos
                             questionnements, ou tout simplement l'aide, ponctuelle ou plus,
                             d'une personne chevronnée ou qui, dans sa simplicité, apportera au
