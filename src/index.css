@@ -160,7 +160,14 @@ h3 {
   justify-items: center;
 }
 
-.modal-content p {
+h4 {
+  text-decoration: underline;
+  text-underline-position: under;
+  line-height: 30px;
+}
+
+.modal-content p,
+h4 {
   padding: 0px 30px;
 }
 
