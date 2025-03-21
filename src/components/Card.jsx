@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import Modal from './Modal';
+import React, { useState } from "react";
+import Modal from "./Modal";
 
 const Card = ({ cards }) => {
     const [selectedCard, setSelectedCard] = useState(null);
@@ -13,9 +13,13 @@ const Card = ({ cards }) => {
     };
 
     return (
-        <div className="card-container" >
-            {cards.map(card => (
-                <div key={card.id} className="card" onClick={() => handleCardClick(card)}>
+        <div className="card-container">
+            {cards.map((card) => (
+                <div
+                    key={card.id}
+                    className="card"
+                    onClick={() => handleCardClick(card)}
+                >
                     <div>
                         <img src={card.imgSrc} alt={card.imgAlt} />
                     </div>
