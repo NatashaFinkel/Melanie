@@ -3,7 +3,7 @@ function ContactPage() {
         <div>
             <p>Voici la page CONTACT</p>
         </div>
-    )
+    );
 }
 
 export default ContactPage;
