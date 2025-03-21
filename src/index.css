@@ -192,3 +192,31 @@ h4 {
   height: 100px;
   margin-bottom: 30px;
 }
+
+.astroSignPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.astroSignPage-main-content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.astroSignPage-txt-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.astroSignPage-txt-container p {
+  margin: 5px 0px;
+}
+
+.astroSign-img {
+  height: 300px;
+  border: 5px dotted yellow;
+}
