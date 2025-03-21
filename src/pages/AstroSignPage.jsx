@@ -3,7 +3,7 @@ function AstroSignPage() {
         <div>
             <p>Voici la page du signe astrologique du mois</p>
         </div>
-    )
+    );
 }
 
-export default AstroSignPage;
+export default AstroSignPage;  

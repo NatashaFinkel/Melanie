@@ -3,7 +3,7 @@ function DisclaimerPage() {
         <div>
             <p>Voici la page DISCLAIMER</p>
         </div>
-    )
+    );
 }
 
 export default DisclaimerPage;

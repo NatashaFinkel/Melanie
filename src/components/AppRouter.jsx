@@ -10,7 +10,12 @@ import ContactPage from "../pages/ContactPage";
 
 const AppRouter = () => {
     return (
-        <Router>
+        <Router
+            future={{
+                v7_startTransition: true,
+                v7_relativeSplatPath: true,
+            }}
+        >
             <Header />
             <Routes>
                 <Route path="/" element={<HomePage />} />
@@ -21,7 +26,7 @@ const AppRouter = () => {
                 <Route path="/contact" element={<ContactPage />} />
             </Routes>
         </Router>
-    )
-}
+    );
+};
 
-export default AppRouter; 
+export default AppRouter;
