@@ -25,6 +25,7 @@ const Card = ({ cards }) => {
                     </div>
                     <h3>{card.name}</h3>
                     <p>{card.cardDescription}</p>
+                    <span className="badge">{card.badge}</span>
                 </div>
             ))}
             <Modal card={selectedCard} onClose={handleCloseModal} />
