@@ -46,13 +46,13 @@ a {
   display: flex;
   justify-content: center;
   gap: 5%;
-  height: 80px;
+  height: 70px;
   align-items: center;
   box-shadow: 0px 0px 25px 5px white;
 }
 
 .menu-option .contact-link {
-  padding: 10px;
+  padding: 5px;
   border: 4px dotted yellow;
   background-color: rgba(98, 1, 95, 0.8);
 }
@@ -72,7 +72,7 @@ a {
 }
 
 main {
-  margin: 70px 100px 150px 100px;
+  margin: 70px 100px 100px;
 }
 
 .center-display {
