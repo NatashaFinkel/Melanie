@@ -17,8 +17,6 @@ function Header() {
 
                 <HeaderPageOption pageUrl="/disclaimer" pageTitle="Disclaimer" />
 
-                <HeaderPageOption pageUrl="/blog" pageTitle="Blog" />
-
                 <HeaderPageOption
                     pageUrl="/contact"
                     pageTitle="Contact et réservation"
