@@ -15,10 +15,29 @@ function PrestationsPage() {
                     </p>
                 </div>
             </section>
-            <section className="center-display card-container">
+            <section>
                 {/* TODO: ajouter footer */}
                 {/* TODO: faire le README */}
                 <Card cards={cardData} />
+            </section>
+            <section>
+                <div className="prestation-details-div">
+                    <p className="styled-p">
+                        Deux formats possibles pour les consultations :
+                    </p>
+                    <ul>
+                        <li>
+                            Tarification à la minute : permet d’adapter la séance en fonction
+                            de vos besoins et de vos disponibilités, sans subir la contrainte
+                            de temps.<br></br>
+                            Par exemple, 55 minutes faites valent 55 euros.
+                        </li>
+                        <li>
+                            Consultation à durée prédéfinie : cliquez sur les cartes ci-dessus
+                            !
+                        </li>
+                    </ul>
+                </div>
             </section>
         </main>
     );
