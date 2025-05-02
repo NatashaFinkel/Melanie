@@ -278,3 +278,16 @@ h4 {
   margin: 15px 0px;
   padding: 0px 20px;
 }
+
+footer{
+  height: 70px;
+  border-top: 2px solid white;
+  background-color: #8B008B;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer a {
+  color: white;
+}
