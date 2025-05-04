@@ -9,12 +9,12 @@ const Modal = ({ card, onClose }) => {
                 <button className="close-button" onClick={onClose}>
                     X
                 </button>
-                <div>
+                <div className="modal-img-div">
                     <img src={card.imgSrc} alt={card.imgAlt} className="modal-img" />
                 </div>
-                <h4>{card.name}</h4>
+                <h4 className="modal-highlighted-txt name-txt">{card.name}</h4>
                 <p>{card.modalDescription}</p>
-                <p>Durée : {card.duration}</p>
+                <p className="modal-highlighted-txt duration-text">Durée : {card.duration}</p>
                 <p>Prix : {card.price}</p>
             </div>
         </div>

@@ -189,15 +189,27 @@ h3 {
   justify-items: center;
 }
 
-h4 {
-  text-decoration: underline;
-  text-underline-position: under;
-  line-height: 30px;
-}
-
 .modal-content p,
 h4 {
   padding: 0px 30px;
+}
+
+.modal-highlighted-txt {
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.name-txt {
+  background-color: #8B008B;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.duration-text {
+  background-color: #00008B;
 }
 
 .close-button {
@@ -216,9 +228,16 @@ h4 {
   color: black;
 }
 
+.modal-img-div {
+  display: flex;
+  justify-content: center;
+  top: 10px;
+  position: relative;
+}
+
 .modal-img {
-  height: 100px;
-  margin-bottom: 30px;
+  width: 70%;
+  margin-bottom: 20px;
 }
 
 .astroSignPage {
