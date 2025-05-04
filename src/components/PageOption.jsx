@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function HeaderPageOption({ pageUrl, optionClassName, pageTitle }) {
+function PageOption({ pageUrl, optionClassName, pageTitle }) {
     return (
         <div className="menu-option">
             <a href={pageUrl} className={optionClassName}>
@@ -11,9 +11,9 @@ function HeaderPageOption({ pageUrl, optionClassName, pageTitle }) {
     );
 }
 
-HeaderPageOption.propTypes = {
+PageOption.propTypes = {
     pageUrl: PropTypes.string.isRequired,
     pageTitle: PropTypes.string.isRequired,
 };
 
-export default HeaderPageOption;
+export default PageOption;

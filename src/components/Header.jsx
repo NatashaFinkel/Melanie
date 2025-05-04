@@ -1,23 +1,23 @@
 import React from "react";
-import HeaderPageOption from "./HeaderPageOption";
+import PageOption from "./PageOption";
 
 function Header() {
     return (
         <div className="header">
             <h1>Les GuidanSes de Mélanie</h1>
             <div className="nav-bar">
-                <HeaderPageOption pageUrl="/" pageTitle="Accueil" />
+                <PageOption pageUrl="/" pageTitle="Accueil" />
 
-                <HeaderPageOption pageUrl="/prestations" pageTitle="Prestations" />
+                <PageOption pageUrl="/prestations" pageTitle="Prestations" />
 
-                <HeaderPageOption
+                <PageOption
                     pageUrl="/anniversaire"
                     pageTitle="Le signe du mois"
                 />
 
-                <HeaderPageOption pageUrl="/disclaimer" pageTitle="Disclaimer" />
+                <PageOption pageUrl="/disclaimer" pageTitle="Disclaimer" />
 
-                <HeaderPageOption
+                <PageOption
                     pageUrl="/contact"
                     pageTitle="Contact et réservation"
                     optionClassName="contact-link"
