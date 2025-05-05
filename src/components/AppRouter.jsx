@@ -7,6 +7,7 @@ import AstroSignPage from "../pages/AstroSignPage";
 import DisclaimerPage from "../pages/DisclaimerPage";
 import ContactPage from "../pages/ContactPage";
 import CGUPage from "../pages/CGUPage";
+import CGVPage from "../pages/CGVPage";
 
 const AppRouter = () => {
     return (
@@ -24,6 +25,7 @@ const AppRouter = () => {
                 <Route path="/disclaimer" element={<DisclaimerPage />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/CGU" element={<CGUPage />} />
+                <Route path="/CGV" element={<CGVPage />} />
             </Routes>
         </Router>
     );

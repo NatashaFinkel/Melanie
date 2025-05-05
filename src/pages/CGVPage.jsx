@@ -1,15 +1,15 @@
 import React from "react";
-import cguData from "../json/cgu.json";
+import cgvData from "../json/cgv.json";
 
-function CGUPage() {
+function CGVPage() {
     return (
         <main>
             <section className="center-display main-content CG-page">
-                <h2 className="cgu-main-title">Conditions générales d'utilisation du site</h2>
+                <h2 className="cgv-main-title">Conditions générales de vente</h2>
                 <div>
-                    {cguData.map((item, index) => (
+                    {cgvData.map((item, index) => (
                         <div key={index} className="cg-section">
-                            {item.title && <h3 className="cgu-secondary-title">{item.title}</h3>}
+                            {item.title && <h3 className="cgv-secondary-title">{item.title}</h3>}
                             {item.paragraph && <p>{item.paragraph}</p>}
                             {item.bullets && (
                                 <ul>
@@ -38,4 +38,4 @@ function CGUPage() {
     );
 }
 
-export default CGUPage;
+export default CGVPage;

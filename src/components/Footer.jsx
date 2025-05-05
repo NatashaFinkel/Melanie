@@ -19,6 +19,7 @@ function Footer() {
             >
                 <img src="/assets/facebook-logo.svg" alt="Logo Facebook"></img>
             </a>
+            <PageOption pageUrl="/CGV" pageTitle="CGV" />
         </footer>
     );
 }
