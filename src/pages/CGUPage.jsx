@@ -1,4 +1,3 @@
-import React from "react";
 import cguData from "../json/cgu.json";
 
 function CGUPage() {

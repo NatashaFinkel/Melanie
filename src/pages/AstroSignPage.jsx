@@ -1,4 +1,3 @@
-import React from "react";
 import zodiacSigns from "../json/zodiacSigns.json";
 
 function getCurrentZodiacSign() {
@@ -14,14 +13,11 @@ function getCurrentZodiacSign() {
             (currentMonth === startMonth && currentDay >= startDay) ||
             (currentMonth === endMonth && currentDay <= endDay) ||
             (currentMonth > startMonth && currentMonth < endMonth) ||
-            (
-                startMonth > endMonth &&
-                (
-                    (currentMonth === startMonth && currentDay >= startDay) ||
+            (startMonth > endMonth &&
+                ((currentMonth === startMonth && currentDay >= startDay) ||
                     (currentMonth === endMonth && currentDay <= endDay) ||
-                    (currentMonth > startMonth || currentMonth < endMonth)
-                )
-            )
+                    currentMonth > startMonth ||
+                    currentMonth < endMonth))
         ) {
             return {
                 zodiacSign: sign.zodiacSign,
@@ -38,7 +34,9 @@ function AstroSignPage() {
     const currentZodiacSignData = getCurrentZodiacSign();
 
     if (!currentZodiacSignData) {
-        return <p>Erreur : Impossible de déterminer le signe astrologique actuel.</p>;
+        return (
+            <p>Erreur : Impossible de déterminer le signe astrologique actuel.</p>
+        );
     }
     const { zodiacSign, img, imgAlt } = currentZodiacSignData;
 
@@ -48,16 +46,12 @@ function AstroSignPage() {
                 <div className="center-display astroSignPage">
                     <h2>Le signe du mois</h2>
                     <div className="astroSignPage-main-content">
-                        <img
-                            src={img}
-                            alt={imgAlt}
-                            className="astroSign-img"
-                        />
+                        <img src={img} alt={imgAlt} className="astroSign-img" />
                         <div className="astroSignPage-txt-container">
                             <p>Bonjour, amis des GuidanSes de Mélanie !</p>
                             <p>
-                                Nous voici maintenant sous le signe du{" "}
-                                <span>{zodiacSign}</span>.
+                                Nous voici maintenant sous le signe du <span>{zodiacSign}</span>
+                                .
                             </p>
                             <p>
                                 C'est votre anniversaire ce mois-ci ? Sachez que vous bénéficiez
@@ -70,8 +64,8 @@ function AstroSignPage() {
                             </p>
                             <br />
                             <p>
-                                JOYEUX ANNIVERSAIRE, MES AMIS/AMIES {zodiacSign} !! 🎂 👏 🥂 🥂🍀 🌺
-                                🌺 👀 👍 💕
+                                JOYEUX ANNIVERSAIRE, MES AMIS/AMIES {zodiacSign} !! 🎂 👏 🥂
+                                🥂🍀 🌺 🌺 👀 👍 💕
                             </p>
                         </div>
                     </div>

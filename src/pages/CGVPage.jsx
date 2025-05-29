@@ -1,4 +1,3 @@
-import React from "react";
 import cgvData from "../json/cgv.json";
 
 function CGVPage() {
