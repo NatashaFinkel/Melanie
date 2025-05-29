@@ -38,6 +38,15 @@ function AstroSignPage() {
             <p>Erreur : Impossible de déterminer le signe astrologique actuel.</p>
         );
     }
+
+    function whichPartitiveArticle(sign) {
+        if (sign === "Vierge" || sign === "Balance") {
+            return "de la ";
+        } else {
+            return "du ";
+        }
+    }
+
     const { zodiacSign, img, imgAlt } = currentZodiacSignData;
 
     return (
@@ -50,7 +59,7 @@ function AstroSignPage() {
                         <div className="astroSignPage-txt-container">
                             <p>Bonjour, amis des GuidanSes de Mélanie !</p>
                             <p>
-                                Nous voici maintenant sous le signe du <span>{zodiacSign}</span>
+                                Nous voici maintenant sous le signe {whichPartitiveArticle(zodiacSign)}<span> {zodiacSign}</span>
                                 .
                             </p>
                             <p>
