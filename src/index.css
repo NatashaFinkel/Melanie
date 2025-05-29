@@ -251,7 +251,7 @@ h4 {
 .astroSignPage-main-content {
   display: flex;
   gap: 50px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .astroSignPage-txt-container {
@@ -265,8 +265,9 @@ h4 {
 }
 
 .astroSign-img {
-  height: 300px;
+  width: 300px;
   border: 5px dotted yellow;
+  height: auto;
 }
 
 .contact-page-main-section {
