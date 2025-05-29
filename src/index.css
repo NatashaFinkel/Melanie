@@ -264,6 +264,11 @@ h4 {
   margin: 5px 0px;
 }
 
+.astroSignPage-txt-container p:last-of-type {
+  text-transform: uppercase;
+  display: inline;
+}
+
 .astroSign-img {
   width: 300px;
   border: 5px dotted yellow;
