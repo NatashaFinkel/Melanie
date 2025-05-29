@@ -1,4 +1,5 @@
 import getCurrentZodiacSign from "../JavaScript/getCurrentZodiacSign";
+import whichPartitiveArticleForZodiacSign from "../JavaScript/whichPartitiveArticleForZodiacSign";
 
 function AstroSignPage() {
     const currentZodiacSignData = getCurrentZodiacSign();
@@ -7,14 +8,6 @@ function AstroSignPage() {
         return (
             <p>Erreur : Impossible de déterminer le signe astrologique actuel.</p>
         );
-    }
-
-    function whichPartitiveArticle(sign) {
-        if (sign === "Vierge" || sign === "Balance") {
-            return "de la ";
-        } else {
-            return "du ";
-        }
     }
 
     const { zodiacSign, img, imgAlt } = currentZodiacSignData;
@@ -29,7 +22,7 @@ function AstroSignPage() {
                         <div className="astroSignPage-txt-container">
                             <p>Bonjour, amis des GuidanSes de Mélanie !</p>
                             <p>
-                                Nous voici maintenant sous le signe {whichPartitiveArticle(zodiacSign)}<span> {zodiacSign}</span>
+                                Nous voici maintenant sous le signe {whichPartitiveArticleForZodiacSign(zodiacSign)}<span>{zodiacSign}</span>
                                 .
                             </p>
                             <p>
