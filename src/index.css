@@ -75,10 +75,28 @@ a {
 }
 
 .nav-bar {
-  background-color: #8B008B;
   gap: 5%;
   height: 60px;
+}
+
+.nav-bar,
+.main-content,
+.card,
+.modal-overlay,
+.astroSignPage,
+.disclaimer-page,
+footer {
   align-items: center;
+}
+
+.nav-bar,
+.badge,
+.name-txt,
+.contact-details-div h2,
+footer,
+.cgv-main-title,
+.cgu-secondary-title {
+  background-color: #8B008B;
 }
 
 .nav-bar,
@@ -116,7 +134,6 @@ main {
   flex-direction: column;
   gap: 10px;
   width: 90%;
-  align-items: center;
 }
 
 .presentation-picture {
@@ -143,13 +160,18 @@ h2 {
   border: 2px solid var(--primary-color);
 }
 
-.prestation-details-div {
+.prestation-details-div,
+.duration-text,
+.cgu-main-title,
+.cgv-secondary-title {
   background-color: #00008B;
+}
+
+.prestation-details-div {
   padding: 10px 0px;
 }
 
 .styled-p {
-  justify-self: center;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
@@ -164,28 +186,50 @@ ul {
   grid-template-columns: repeat(3, 30%);
   margin: 80px 0px;
   gap: 30px;
+}
+
+.card-container,
+.modal-content,
+.contact-page-main-section {
   justify-items: center;
 }
 
 .card {
-  background-color: #fff;
-  color: #00008B;
+  background-color: var(--primary-color);
   padding: 0px 5px;
   padding-top: 30px;
-  align-items: center;
   max-width: 300px;
-  width: 100%;
   cursor: pointer;
   flex-direction: column;
-  text-align: center;
   box-shadow: 0px 0px 55px 5px black;
   justify-content: flex-end;
 }
 
-.badge {
-  background-color: #8B008B;
-  padding: 4px 8px;
+.card,
+.card img,
+.modal-overlay,
+.modal-content,
+.modal-highlighted-txt,
+.disclaimer-page,
+.CG-page h2 {
+  width: 100%;
+}
+
+.card,
+.modal-content {
+  color: #00008B;
+}
+
+.card,
+.badge,
+.modal-highlighted-txt,
+.contact-page-main-section,
+.CG-page h2 {
   text-align: center;
+}
+
+.badge {
+  padding: 4px 8px;
   width: 104%;
   position: relative;
   bottom: 5px;
@@ -196,7 +240,6 @@ h3 {
 }
 
 .card img {
-  width: 100%;
   height: 100px;
   border-bottom: none;
 }
@@ -205,19 +248,14 @@ h3 {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  align-items: center;
 }
 
 .modal-content {
   background: var(--primary-color);
   padding: 20px;
   max-width: 400px;
-  width: 100%;
-  color: #00008B;
-  justify-items: center;
 }
 
 .modal-content p,
@@ -225,21 +263,11 @@ h4 {
   padding: 0px 30px;
 }
 
-.modal-highlighted-txt {
-  width: 100%;
-  text-align: center;
-}
-
 .name-txt {
-  background-color: #8B008B;
   font-weight: normal;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 25px;
-}
-
-.duration-text {
-  background-color: #00008B;
 }
 
 .close-button {
@@ -271,12 +299,7 @@ h4 {
 .astroSignPage,
 .disclaimer-page {
   flex-direction: column;
-  align-items: center;
   width: 80%;
-}
-
-.disclaimer-page {
-  width: 100%;
 }
 
 .astroSignPage-main-content {
@@ -304,11 +327,6 @@ h4 {
   height: auto;
 }
 
-.contact-page-main-section {
-  text-align: center;
-  justify-items: center;
-}
-
 .contact-details-div {
   flex-direction: column;
   box-shadow: 0px 5px 30px 10px var(--primary-color);
@@ -318,7 +336,6 @@ h4 {
 }
 
 .contact-details-div h2 {
-  background-color: #8B008B;
   font-weight: normal;
   padding: 15px 0px;
   border-bottom: solid 2px var(--primary-color);
@@ -358,14 +375,18 @@ h4 {
 }
 
 .disclaimer-page-recap p {
-  justify-self: center;
   margin-bottom: 30px;
+}
+
+.disclaimer-page-recap p,
+.styled-p,
+.CG-page,
+.cg-section h3 {
+  justify-self: center;
 }
 
 footer {
   height: 60px;
-  background-color: #8B008B;
-  align-items: center;
   justify-content: space-evenly;
 }
 
@@ -379,25 +400,11 @@ footer img:hover {
   filter: drop-shadow(0px 0px 10px var(--primary-color));
 }
 
-.CG-page {
-  justify-self: center;
-}
-
 .CG-page h2 {
   border-bottom: 2px solid var(--primary-color);
   width: fit-content;
-  text-align: center;
-  width: 100%;
   padding: 5px 0px;
   margin-bottom: 20px;
-}
-
-.cgu-main-title {
-  background-color: #00008B;
-}
-
-.cgv-main-title {
-  background-color: #8B008B;
 }
 
 .cg-section {
@@ -406,16 +413,7 @@ footer img:hover {
 
 .cg-section h3 {
   width: fit-content;
-  justify-self: center;
   padding: 5px;
   margin-top: 70px;
   margin-bottom: 25px;
-}
-
-.cgu-secondary-title {
-  background-color: #8B008B;
-}
-
-.cgv-secondary-title {
-  background-color: #00008B;
 }
