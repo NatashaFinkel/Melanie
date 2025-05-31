@@ -1,4 +1,6 @@
 import getCurrentZodiacSign from "../JavaScript/getCurrentZodiacSign";
+import GenerateParagrahTxtContent from "../components/GenerateParagrahTxtContent";
+import astroSignPageTxt from "../json/astroSignPage-txt.json"
 import whichPartitiveArticleForZodiacSign from "../JavaScript/whichPartitiveArticleForZodiacSign";
 
 function AstroSignPage() {
@@ -20,30 +22,70 @@ function AstroSignPage() {
                     <div className="astroSignPage-main-content">
                         <img src={img} alt={imgAlt} className="astroSign-img" />
                         <div className="astroSignPage-txt-container">
-                            <p>Bonjour, amis des GuidanSes de Mélanie !</p>
-                            <p>
-                                Nous voici maintenant sous le signe {whichPartitiveArticleForZodiacSign(zodiacSign)}<span>{zodiacSign}</span>
-                                .
-                            </p>
-                            <p>
-                                C'est votre anniversaire ce mois-ci ? Sachez que vous bénéficiez
-                                d'une réduction de 20 % sur les GuidanSes individuelles privées.
-                            </p>
-                            <p>
-                                Attention, c'est une offre à durée limitée : elle est valable
-                                uniquement si votre propre signe astrologique est identique à
-                                celui de la date de la prestation.
-                            </p>
-                            <br />
-                            <p>
-                                JOYEUX ANNIVERSAIRE, MES AMIS/AMIES {zodiacSign} !! 🎂 👏 🥂
-                                🥂🍀 🌺 🌺 👀 👍 💕
-                            </p>
+                            <GenerateParagrahTxtContent
+                                page="astroSignPage-prop-1"
+                                jsonFile={[
+                                    {
+                                        txt: "Bonjour, amis des GuidanSes de Mélanie !"
+                                    }
+                                ].map(item => ({
+                                    paragraph: (
+                                        <>
+                                            {item.txt}
+                                        </>
+                                    )
+                                }))}
+                                textType="p"
+                                className="no-margin"
+                                textProp="paragraph"
+                            />
+                            <GenerateParagrahTxtContent
+                                page="astroSignPage-prop"
+                                jsonFile={[
+                                    {
+                                        before: "Nous voici maintenant sous le signe ",
+                                        after: "."
+                                    }
+                                ].map(item => ({
+                                    paragraph: (
+                                        <>
+                                            {item.before}
+                                            {whichPartitiveArticleForZodiacSign(zodiacSign)}
+                                            < span > {zodiacSign}</span>
+                                            {item.after}
+                                        </>
+                                    )
+                                }))}
+                                textType="p"
+                                textProp="paragraph"
+                            />
+                            <GenerateParagrahTxtContent page="astroSignPage"
+                                jsonFile={astroSignPageTxt} textType="p" textProp="paragraph"></GenerateParagrahTxtContent>
+                            <GenerateParagrahTxtContent
+                                page="astroSignPage-prop-2"
+                                jsonFile={[
+                                    {
+                                        before: "JOYEUX ANNIVERSAIRE, MES AMIS/AMIES ",
+                                        after: "!! 🎂 👏 🥂🥂🍀 🌺 🌺 👀 👍 💕"
+                                    }
+                                ].map(item => ({
+                                    paragraph: (
+                                        <>
+                                            {item.before}
+                                            <span> {zodiacSign}</span>
+                                            {item.after}
+                                        </>
+                                    )
+                                }))}
+                                textType="p"
+                                className="upperCaseTxt"
+                                textProp="paragraph"
+                            />
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
+            </section >
+        </main >
     );
 }
 

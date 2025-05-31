@@ -313,10 +313,14 @@ h4 {
 }
 
 .astroSignPage-txt-container p {
-  margin: 5px 0px;
+  margin: 0px 0px 15px;
 }
 
-.astroSignPage-txt-container p:last-of-type {
+.astroSignPage-txt-container .no-margin {
+  margin: 0px;
+}
+
+.astroSignPage-txt-container .upperCaseTxt {
   text-transform: uppercase;
   display: inline;
 }
