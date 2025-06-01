@@ -12,7 +12,6 @@ function HomePage() {
             className="presentation-picture"
           ></img>
         </div>
-        {/* TODO: faire un fichier json pour tout les textes */}
         {/* TODO: décoration pour currentPage dans le header */}
         <div className="presentation-txt">
           <h2>Êtes-vous prêt à transformer votre vie ?</h2>
