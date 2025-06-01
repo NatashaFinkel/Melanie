@@ -1,6 +1,7 @@
 import DisclaimerElement from '../components/DisclaimerElement';
 import disclaimerProsData from '../json/disclaimer-pros-data.json';
 import disclaimerConsData from '../json/disclaimer-cons-data.json';
+import GenerateParagrahTxtContent from "../components/GenerateParagrahTxtContent";
 
 function DisclaimerPage() {
     return (
@@ -15,7 +16,23 @@ function DisclaimerPage() {
                     <DisclaimerElement jsonFile={disclaimerConsData} prop1="con"
                         className="disclaimerConDiv" />
                     <div className="disclaimer-page-recap">
-                        <p>À ce titre, un ou une tarologue est là pour t'aider, grâce au langage des cartes, à traduire les messages que t'envoie ton subconscient.</p>
+
+                        <GenerateParagrahTxtContent
+                            page="disclaimerPage"
+                            jsonFile={[
+                                {
+                                    txt: "À ce titre, un ou une tarologue est là pour t'aider, grâce au langage des cartes, à traduire les messages que t'envoie ton subconscient."
+                                }
+                            ].map(item => ({
+                                paragraph: (
+                                    <>
+                                        {item.txt}
+                                    </>
+                                )
+                            }))}
+                            textType="p"
+                            textProp="paragraph"
+                        />
                     </div>
                 </div>
             </section>
