@@ -422,9 +422,8 @@ footer img:hover {
 }
 
 .CG-page h2 {
-  border-bottom: 2px solid var(--primary-color);
   width: fit-content;
-  padding: 5px 0px;
+  padding: 5px 10px;
   margin-bottom: 20px;
 }
 
