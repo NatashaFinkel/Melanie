@@ -65,7 +65,7 @@ function AstroSignPage() {
                                 page="astroSignPage-prop-2"
                                 jsonFile={[
                                     {
-                                        before: "JOYEUX ANNIVERSAIRE, MES AMIS/AMIES ",
+                                        before: "JOYEUX ANNIVERSAIRE, MES AMIS ET AMIES ",
                                         after: "!! 🎂 👏 🥂🥂🍀 🌺 🌺 👀 👍 💕"
                                     }
                                 ].map(item => ({
