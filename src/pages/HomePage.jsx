@@ -2,26 +2,32 @@ import GenerateParagrahTxtContent from "../components/GenerateParagrahTxtContent
 import homePageTxt from "../json/homePage-txt.json";
 
 function HomePage() {
-    return (
-        <main>
-            <section className="center-display">
-                <div className="center-display">
-                    <img
-                        src="./assets/photo-melanie.png"
-                        alt="Mélanie"
-                        className="presentation-picture"
-                    ></img>
-                </div>
-                {/* TODO: faire un fichier json pour tout les textes */}
-                <div className="presentation-txt">
-                    <h2>Êtes-vous prêt à transformer votre vie ?</h2>
-                    <div>
-                        <GenerateParagrahTxtContent page="homePage" jsonFile={homePageTxt} textType="p" textProp="paragraph" />
-                    </div>
-                </div>
-            </section>
-        </main>
-    );
+  return (
+    <main>
+      <section className="center-display">
+        <div className="center-display">
+          <img
+            src="./assets/photo-melanie.png"
+            alt="Mélanie"
+            className="presentation-picture"
+          ></img>
+        </div>
+        {/* TODO: faire un fichier json pour tout les textes */}
+        {/* TODO: décoration pour currentPage dans le header */}
+        <div className="presentation-txt">
+          <h2>Êtes-vous prêt à transformer votre vie ?</h2>
+          <div>
+            <GenerateParagrahTxtContent
+              page="homePage"
+              jsonFile={homePageTxt}
+              textType="p"
+              textProp="paragraph"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+  );
 }
 
-export default HomePage;  
+export default HomePage;
