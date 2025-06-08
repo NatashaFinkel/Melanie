@@ -7,27 +7,29 @@ import DisclaimerPage from "../pages/DisclaimerPage";
 import ContactPage from "../pages/ContactPage";
 import CGUPage from "../pages/CGUPage";
 import CGVPage from "../pages/CGVPage";
+import Footer from "./Footer";
 
 const AppRouter = () => {
-    return (
-        <Router
-            future={{
-                v7_startTransition: true,
-                v7_relativeSplatPath: true,
-            }}
-        >
-            <Header />
-            <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/prestations" element={<PrestationsPage />} />
-                <Route path="/anniversaire" element={<AstroSignPage />} />
-                <Route path="/disclaimer" element={<DisclaimerPage />} />
-                <Route path="/contact" element={<ContactPage />} />
-                <Route path="/CGU" element={<CGUPage />} />
-                <Route path="/CGV" element={<CGVPage />} />
-            </Routes>
-        </Router>
-    );
+  return (
+    <Router
+      future={{
+        v7_startTransition: true,
+        v7_relativeSplatPath: true,
+      }}
+    >
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/prestations" element={<PrestationsPage />} />
+        <Route path="/anniversaire" element={<AstroSignPage />} />
+        <Route path="/disclaimer" element={<DisclaimerPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/CGU" element={<CGUPage />} />
+        <Route path="/CGV" element={<CGVPage />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
 };
 
 export default AppRouter;
