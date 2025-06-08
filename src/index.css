@@ -64,6 +64,13 @@ footer {
   flex-direction: column;
 }
 
+.active-link,
+.menu-option .contact-link.active-link {
+  background-color: #b800b8;
+  pointer-events: none;
+  cursor: default;
+}
+
 h1 {
   margin-bottom: 40px;
   font-family: "Dancing Script", cursive;
@@ -76,7 +83,6 @@ a {
 
 .nav-bar {
   gap: 5%;
-  height: 60px;
 }
 
 .nav-bar,
@@ -106,20 +112,23 @@ footer,
   box-shadow: 0px 0px 25px 5px var(--primary-color);
 }
 
+.menu-option a {
+  padding: 15px 25px;
+  border-radius: 50%;
+}
+
 .menu-option .contact-link {
-  padding: 5px;
-  border: 4px dotted yellow;
-  background-color: rgba(98, 1, 95, 0.8);
+  background-color: rgb(98, 1, 95);
 }
 
 a:hover {
-  text-decoration: underline;
-  text-underline-position: under;
+  background-color: #b800b8;
 }
 
 .menu-option .contact-link:hover {
   background-color: #b800b8;
   text-decoration: none;
+  height: 100%;
 }
 
 main {
@@ -409,6 +418,12 @@ h4 {
 footer {
   height: 60px;
   justify-content: space-evenly;
+}
+
+footer a:hover {
+  background-color: inherit;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 footer img {
