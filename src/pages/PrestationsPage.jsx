@@ -24,8 +24,6 @@ function PrestationsPage() {
         </div>
       </section>
       <section>
-        {/* TODO: optimiser les images */}
-        {/* TODO: faire le README */}
         <Card cards={cardData} />
       </section>
       <section>
