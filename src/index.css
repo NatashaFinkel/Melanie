@@ -1,26 +1,27 @@
 :root {
-  min-width: 992px;
-  max-width: 1400px;
-
   --primary-color: #fff;
 }
 
-.root {
-  min-width: 992px;
-  max-width: 1400px;
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 body {
   font-family: "Lora", serif;
   margin: 0px;
   letter-spacing: 2px;
-  font-size: 20px;
+  font-size: 18px;
   background-image: linear-gradient(to top, #1de0e0 0%, #540bacd7 100%);
 }
 
@@ -60,15 +61,25 @@ footer {
   display: flex;
 }
 
-.header {
+.header,
+.main-content,
+.presentation-txt,
+ul,
+.card,
+.astroSignPage,
+.disclaimer-page,
+.astroSignPage-txt-container,
+.contact-details-div {
   flex-direction: column;
 }
 
 .active-link,
 .menu-option .contact-link.active-link {
-  background-color: #b800b8;
   pointer-events: none;
   cursor: default;
+  display: flex;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 h1 {
@@ -82,7 +93,11 @@ a {
 }
 
 .nav-bar {
-  gap: 5%;
+  height: 35px;
+  gap: 4%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .nav-bar,
@@ -113,8 +128,7 @@ footer,
 }
 
 .menu-option a {
-  padding: 15px 25px;
-  border-radius: 50%;
+  padding: 7px 20px;
 }
 
 .menu-option .contact-link {
@@ -122,17 +136,13 @@ footer,
 }
 
 a:hover {
-  background-color: #b800b8;
-}
-
-.menu-option .contact-link:hover {
-  background-color: #b800b8;
-  text-decoration: none;
-  height: 100%;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 main {
   margin: 70px 100px 100px;
+  flex: 1 0 auto;
 }
 
 .center-display {
@@ -140,7 +150,6 @@ main {
 }
 
 .main-content {
-  flex-direction: column;
   gap: 10px;
   width: 90%;
 }
@@ -152,7 +161,6 @@ main {
 }
 
 .presentation-txt {
-  flex-direction: column;
   margin-left: 50px;
 }
 
@@ -195,7 +203,6 @@ h2 {
 }
 
 ul {
-  flex-direction: column;
   gap: 20px;
 }
 
@@ -218,7 +225,6 @@ ul {
   padding-top: 30px;
   max-width: 300px;
   cursor: pointer;
-  flex-direction: column;
   box-shadow: 0px 0px 55px 5px black;
   justify-content: flex-end;
 }
@@ -227,7 +233,6 @@ ul {
 .card img,
 .modal-overlay,
 .modal-content,
-.modal-highlighted-txt,
 .disclaimer-page,
 .CG-page h2 {
   width: 100%;
@@ -248,7 +253,7 @@ ul {
 
 .badge {
   padding: 4px 8px;
-  width: 104%;
+  width: 98%;
   position: relative;
   bottom: 5px;
 }
@@ -316,7 +321,6 @@ h4 {
 
 .astroSignPage,
 .disclaimer-page {
-  flex-direction: column;
   width: 80%;
 }
 
@@ -326,7 +330,6 @@ h4 {
 }
 
 .astroSignPage-txt-container {
-  flex-direction: column;
   gap: 10px;
 }
 
@@ -350,7 +353,6 @@ h4 {
 }
 
 .contact-details-div {
-  flex-direction: column;
   box-shadow: 0px 5px 30px 10px var(--primary-color);
   width: 50%;
   line-height: 30px;
@@ -416,7 +418,7 @@ h4 {
 }
 
 footer {
-  height: 60px;
+  height: 40px;
   justify-content: space-evenly;
 }
 
@@ -427,8 +429,8 @@ footer a:hover {
 }
 
 footer img {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   filter: drop-shadow(0px 0px 10px rgba(98, 1, 95, 0.8));
 }
 
