@@ -48,6 +48,7 @@ h1,
 .nav-bar,
 .center-display,
 ul,
+.presentation-txt,
 .card,
 .modal-overlay,
 .modal-img-div,
@@ -86,6 +87,7 @@ h1 {
   margin-bottom: 40px;
   font-family: "Dancing Script", cursive;
   font-weight: 900;
+  text-align: center;
 }
 
 a {
@@ -469,6 +471,12 @@ footer img:hover {
   .menu-option a {
     padding: 0px 7px;
   }
+
+  .presentation-picture {
+    max-width: 200px;
+  }
+}
+
 @media (width <=768px) {
   body {
     font-size: 13px;
@@ -481,6 +489,7 @@ footer img:hover {
   .menu-option a {
     padding: 0px 3px;
   }
+}
 
 @media (width <=425px) {
   .nav-bar {
@@ -516,7 +525,19 @@ footer img:hover {
     font-size: 1.5em;
   }
 
-  .presentation-txt,
+  main {
+    margin: 0px 50px;
+  }
+
+  .center-display {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .presentation-txt {
+    margin: 0px;
+  }
+
   footer {
     display: none;
   }
