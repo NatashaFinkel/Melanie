@@ -10,30 +10,35 @@ function Header() {
         <PageOption
           pageUrl="/"
           pageTitle="Accueil"
+          icon={<i className="fa fa-home"></i>}
           isActive={location.pathname === "/"}
         />
 
         <PageOption
           pageUrl="/prestations"
           pageTitle="Prestations"
+          icon={<i className="fa-solid fa-magnifying-glass"></i>}
           isActive={location.pathname === "/prestations"}
         />
 
         <PageOption
           pageUrl="/anniversaire"
           pageTitle="Astro"
+          icon={<i className="fa-solid fa-cake-candles"></i>}
           isActive={location.pathname === "/anniversaire"}
         />
 
         <PageOption
           pageUrl="/disclaimer"
           pageTitle="Disclaimer"
+          icon={<i className="fa-regular fa-circle-xmark"></i>}
           isActive={location.pathname === "/disclaimer"}
         />
 
         <PageOption
           pageUrl="/contact"
           pageTitle="Contact et réservation"
+          icon={<i className="fa-regular fa-envelope"></i>}
           optionClassName="contact-link"
           isActive={location.pathname === "/contact"}
         />
