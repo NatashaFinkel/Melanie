@@ -454,3 +454,28 @@ footer img:hover {
   margin-top: 70px;
   margin-bottom: 25px;
 }
+
+@media (width <=1024px) {
+
+  body,
+  h2 {
+    font-size: 16px;
+  }
+
+  .menu-option a {
+    padding: 0px 7px;
+  }
+@media (width <=768px) {
+  body {
+    font-size: 13px;
+  }
+
+  .nav-bar {
+    padding: 0px;
+  }
+
+  .menu-option a {
+    padding: 0px 3px;
+  }
+
+}
