@@ -21,7 +21,7 @@ function Header() {
 
         <PageOption
           pageUrl="/anniversaire"
-          pageTitle="Le signe du mois"
+          pageTitle="Astro"
           isActive={location.pathname === "/anniversaire"}
         />
 
@@ -35,7 +35,7 @@ function Header() {
           pageUrl="/contact"
           pageTitle="Contact et réservation"
           optionClassName="contact-link"
-            isActive={location.pathname === "/contact"}
+          isActive={location.pathname === "/contact"}
         />
       </div>
     </div>
