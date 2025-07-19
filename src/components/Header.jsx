@@ -29,7 +29,7 @@ function Header() {
         <PageOption
           pageUrl="/prestations"
           pageTitle="Prestations"
-          icon={<i className="fa-solid fa-magnifying-glass"></i>}
+          icon={<i className="fa-solid fa-star"></i>}
           isActive={location.pathname === "/prestations"}
         />
 
