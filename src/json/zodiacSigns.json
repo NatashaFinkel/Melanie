@@ -22,7 +22,7 @@
     },
     {
         "zodiacSign": "Cancer",
-        "zodiacSignImg": "/assets/zodiac/cancer.jpg",
+        "zodiacSignImg": "/assets/zodiac/cancer.png",
         "zodiacSignAlt": "cancer",
         "start": "22-06",
         "end": "22-07"
