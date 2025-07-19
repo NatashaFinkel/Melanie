@@ -169,13 +169,17 @@ section {
   gap: 10px;
 }
 
-.divider {
-  display: none;
-  width: 100px;
+.header-title {
+  display: flex;
   align-self: center;
-  margin-top: 30px;
+  gap: 30px;
+  margin-bottom: 20px;
 }
 
+.divider {
+  width: 65px;
+  align-self: center;
+}
 
 .presentation-picture {
   object-fit: cover;
@@ -544,6 +548,21 @@ footer img:hover {
 
 @media (width <=425px) {
 
+
+  .header-title {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .divider {
+    width: 90px;
+  }
+
+  .second-divider {
+    display: none;
+  }
+
   .nav-bar {
     position: fixed;
     bottom: 0;
@@ -583,10 +602,6 @@ footer img:hover {
 
   .center-display {
     align-items: center;
-  }
-
-  .divider {
-    display: flex;
   }
 
   .presentation-txt {

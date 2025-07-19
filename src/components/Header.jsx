@@ -5,12 +5,19 @@ function Header() {
   const location = useLocation();
   return (
     <div className="header">
-      <img
-        src="/assets/divider.png"
-        alt="séparateur décoratif"
-        className="divider"
-      ></img>
-      <h1>Les GuidanSes de Mélanie</h1>
+      <div className="header-title">
+        <img
+          src="/assets/divider.png"
+          alt="séparateur décoratif"
+          className="divider"
+        ></img>
+        <h1>Les GuidanSes de Mélanie</h1>
+        <img
+          src="/assets/divider.png"
+          alt="séparateur décoratif"
+          className="divider second-divider"
+        ></img>
+      </div>
       <div className="nav-bar">
         <PageOption
           pageUrl="/"
