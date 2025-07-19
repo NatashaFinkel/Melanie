@@ -1,12 +1,12 @@
 [
     {
         "id": 1,
-        "name": "Tour d'horizon, état des lieux.",
+        "name": "Tour d'horizon, état des lieux",
         "badge": "Consultation",
         "cardDescription": "Pafait pour débuter.",
         "modalDescription": "Cette consultation se veut un résumé des divers domaines de ta vie, lorsque tu n'as pas de question précise, ou dans les périodes où tu es en maîtrise afin de repérer les tendances prochaines.",
         "imgSrc": "/assets/card-img/vision.jpg",
-        "imgAlt": "Illustration de la carte 1",
+        "imgAlt": "Illustration de la carte : Tour d'horizon, état des lieux",
         "duration": "entre 40 et 50 minutes.",
         "price": "60€"
     },
@@ -17,7 +17,7 @@
         "cardDescription": "D'après le protocole du docteur Luc Bodin.",
         "modalDescription": "Le travail sur les corps subtiles nettoie, harmonise et rééquilibre les chakras. Ce soin est particulièrement recommandé pour les personnes fatiguées, déprimées, ou qui ont des douleurs inexpliquées.",
         "imgSrc": "/assets/card-img/arbre-vie.jpg",
-        "imgAlt": "Illustration de la carte 2",
+        "imgAlt": "Illustration de la carte : Travail énergétique : les corps subtils (partie 1)",
         "duration": "20 minutes.",
         "price": "40€"
     },
@@ -28,18 +28,18 @@
         "cardDescription": "D'après le protocole du docteur Luc Bodin.",
         "modalDescription": "Le travail sur les corps subtiles nettoie, harmonise et rééquilibre les chakras. Ce soin est particulièrement recommandé pour les personnes fatiguées, déprimées, ou qui ont des douleurs inexpliquées.",
         "imgSrc": "/assets/card-img/lotus-rose.jpg",
-        "imgAlt": "Illustration de la carte 3",
+        "imgAlt": "Illustration de la carte : Travail énergétique : Les corps subtils (partie 2).",
         "duration": "20 minutes.",
         "price": "40€"
     },
     {
         "id": 4,
-        "name": "Voyance et guidances.",
+        "name": "Voyance et guidances",
         "badge": "Consultation",
         "cardDescription": "Travail au pendule, sur photo.",
         "modalDescription": "Cette consultation permet de répondre à une question précise grâce à l'utilisation du pendule et du tarot divinatoire.",
-        "imgAlt": "Illustration de la carte 4",
         "imgSrc": "/assets/card-img/oracle.jpg",
+        "imgAlt": "Illustration de la carte : Voyance et guidances",
         "duration": "15 minutes.",
         "price": "30€"
     },
@@ -50,7 +50,7 @@
         "cardDescription": "Soin énergétique très doux",
         "modalDescription": "Ce soin permet de rééquilibrer les chakras et de réharmoniser les corps subtils. Il est particulièrement recommandé pour les personnes sensibles et les enfants. Disponible aussi pour les animaux !",
         "imgSrc": "/assets/card-img/enfant-couleurs.jpg",
-        "imgAlt": "Illustration de la carte 5",
+        "imgAlt": "Illustration de la carte : Le soutien par les couleurs",
         "duration": "30 minutes.",
         "price": "25€"
     },
@@ -60,8 +60,8 @@
         "badge": "Consultation",
         "cardDescription": "Theme astral, lecture et interprétation d'oracles.",
         "modalDescription": "Cette consultation permet de mieux se connaître, de comprendre ses forces et ses faiblesses, de mieux appréhender les périodes de changement et de transformation.",
-        "imgAlt": "Illustration de la carte 6",
         "imgSrc": "/assets/card-img/astro.jpg",
+        "imgAlt": "Illustration de la carte : Astrologie, numérologie",
         "duration": "40 minutes.",
         "price": "60€"
     },
@@ -72,7 +72,7 @@
         "cardDescription": "Messages de vos guides, contact avec les défunts.",
         "modalDescription": "Vous recevez des signes, des messages, mais vous ne savez pas comment les interpréter ? Je peux vous aider à contacter vos guides, vos anges, ou vos défunts.",
         "imgSrc": "/assets/card-img/crepuscule-pere-fils.jpg",
-        "imgAlt": "",
+        "imgAlt": "Illustration de la carte : Messages de l'autre monde",
         "duration": "30 minutes.",
         "price": "40€"
     },
@@ -83,7 +83,7 @@
         "cardDescription": "Développement personnel, motivation, soutien.",
         "modalDescription": "Vous avez besoin d'un coup de pouce pour avancer dans votre vie, pour dépasser vos peurs, pour vous libérer de vos blocages ? Je suis là pour vous aider à trouver votre voie, à vous réaliser pleinement.",
         "imgSrc": "/assets/card-img/motivation.jpeg",
-        "imgAlt": "",
+        "imgAlt": "Illustration de la carte : Coaching",
         "duration": "1 heure.",
         "price": "70€"
     }
