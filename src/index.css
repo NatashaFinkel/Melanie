@@ -548,7 +548,7 @@ footer img:hover {
 @media (width <=425px) {
 
   body {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   h1 {
@@ -603,7 +603,7 @@ footer img:hover {
 
   .nav-icon {
     display: inline;
-    font-size: 1.5em;
+    font-size: 24px;
   }
 
   main {
@@ -618,8 +618,22 @@ footer img:hover {
     margin: 0px;
   }
 
+  .presentation-txt p {
+    margin: 30px 0px;
+  }
+
   .modal-content {
     margin-bottom: 50px;
+    max-width: 275px;
+  }
+
+  .close-button {
+    top: 5px;
+    left: 235px;
+  }
+
+  .name-txt {
+    font-size: 15px;
   }
 
   footer {
