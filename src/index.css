@@ -23,8 +23,9 @@ body {
   margin: 0px;
   letter-spacing: 2px;
   font-size: 18px;
-  background-image: linear-gradient(to top, #1de0e0 0%, #540bacd7 100%);
+  background-image: linear-gradient(to top, #1de0e0 -5%, #540bacd7 100%);
   height: 100%;
+  background-color: navy;
 }
 
 body,
@@ -89,7 +90,6 @@ ul,
 }
 
 h1 {
-  margin-bottom: 40px;
   font-family: "Dancing Script", cursive;
   font-weight: 900;
   text-align: center;
@@ -258,7 +258,7 @@ main,
   background-color: var(--primary-color);
   max-width: 250px;
   cursor: pointer;
-  box-shadow: 0px 0px 55px 5px black;
+  box-shadow: 5px 6px 7px 0px black;
   justify-content: space-between;
   position: relative;
 }
@@ -324,8 +324,8 @@ h3 {
 
 .modal-content {
   background: var(--primary-color);
-  padding: 20px;
-  max-width: 400px;
+  padding: 0px;
+  max-width: 350px;
 }
 
 .modal-content p,
@@ -342,8 +342,8 @@ h4 {
 
 .close-button {
   position: relative;
-  top: 0px;
-  left: 165px;
+  top: 10px;
+  left: 310px;
   font-weight: 900;
   background: none;
   border: none;
@@ -357,7 +357,6 @@ h4 {
 }
 
 .modal-img-div {
-  top: 10px;
   position: relative;
 }
 
@@ -548,6 +547,13 @@ footer img:hover {
 
 @media (width <=425px) {
 
+  body {
+    font-size: 17px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
 
   .header-title {
     flex-direction: column;
@@ -578,6 +584,10 @@ footer img:hover {
     text-align: center;
   }
 
+  h3 {
+    font-size: 17px;
+  }
+
   .menu-option a {
     width: 100%;
     border-bottom: none;
@@ -597,7 +607,7 @@ footer img:hover {
   }
 
   main {
-    margin: 0px 50px 100px;
+    margin: 0px 0px 100px;
   }
 
   .center-display {
@@ -606,6 +616,10 @@ footer img:hover {
 
   .presentation-txt {
     margin: 0px;
+  }
+
+  .modal-content {
+    margin-bottom: 50px;
   }
 
   footer {
