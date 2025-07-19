@@ -100,7 +100,7 @@ a {
 }
 
 .nav-bar {
-  height: 35px;
+  height: 45px;
   gap: 4%;
   display: flex;
   justify-content: space-around;
@@ -210,7 +210,7 @@ h2 {
 }
 
 .prestation-details-div {
-  padding: 10px 0px;
+  padding: 15px;
 }
 
 .prestation-page-ul {
@@ -225,17 +225,22 @@ h2 {
 .styled-p {
   text-transform: uppercase;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 ul {
   gap: 20px;
 }
 
+.full-page-section {
+  min-width: fit-content;
+}
+
 .card-container {
-  display: grid;
-  grid-template-columns: repeat(3, 30%);
   margin: 80px 0px;
   gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 main,
@@ -247,16 +252,18 @@ main,
 
 .card {
   background-color: var(--primary-color);
-  padding: 0px 5px;
-  padding-top: 30px;
-  max-width: 300px;
+  max-width: 250px;
   cursor: pointer;
   box-shadow: 0px 0px 55px 5px black;
-  justify-content: flex-end;
+  justify-content: space-between;
+  position: relative;
 }
 
+.full-page-section,
 .card,
 .card img,
+.card>div:first-child,
+.badge,
 .modal-overlay,
 .modal-content,
 .disclaimer-page,
@@ -278,8 +285,6 @@ main,
 }
 
 .badge {
-  padding: 4px 8px;
-  width: 98%;
   position: relative;
   bottom: 5px;
 }
@@ -289,8 +294,20 @@ h3 {
 }
 
 .card img {
-  height: 100px;
-  border-bottom: none;
+  height: 130px;
+  object-fit: fill;
+}
+
+.card>div:first-child {
+  position: absolute;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.card h3,
+.card p {
+  padding: 0px 5px;
 }
 
 .modal-overlay {
@@ -444,7 +461,7 @@ h4 {
 }
 
 footer {
-  height: 40px;
+  padding: 10px 0px;
   justify-content: space-evenly;
 }
 
@@ -457,6 +474,7 @@ footer a:hover {
 footer img {
   width: 35px;
   height: 35px;
+  height: 20px;
   filter: drop-shadow(0px 0px 10px rgba(98, 1, 95, 0.8));
 }
 

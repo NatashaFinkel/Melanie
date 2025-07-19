@@ -23,7 +23,7 @@ function PrestationsPage() {
           />
         </div>
       </section>
-      <section>
+      <section className="full-page-section">
         <Card cards={cardData} />
       </section>
       <section>
