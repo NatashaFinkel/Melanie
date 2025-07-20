@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/melanie-app/sw.js', { scope: '/melanie-app/' })})}
