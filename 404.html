@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="/Melanie/404.css">
     <script>
         // Script de redirection pour GitHub Pages avec React Router
-        // Stocke l'URL actuelle et redirige vers index.html SEULEMENT si appelé
-        var segmentCount = 1; // Nombre de segments dans le chemin (pour /Melanie/)
-        var l = window.location;
+        // Cette fonction sera appelée SEULEMENT par le bouton, pas automatiquement
+        function goHomeWithRedirect() {
+            var segmentCount = 1; // Nombre de segments dans le chemin (pour /Melanie/)
+            var l = window.location;
 
-        // Fonction de redirection (appelée seulement via le bouton)
-        function performRedirect() {
+            // Redirection pour React Router avec les paramètres de routage
             l.replace(
                 l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
                 l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
@@ -22,6 +22,12 @@
                 (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
                 l.hash
             );
+        }
+
+        // Fonction simple pour retourner à l'accueil
+        function goHome() {
+            var l = window.location;
+            window.location.href = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/Melanie/';
         }
     </script>
 </head>
@@ -32,18 +38,10 @@
         <p class="error-message">La page que vous recherchez n'existe pas ou a été déplacée.</p>
         <p>Cliquez sur le bouton ci-dessous pour retourner à l'accueil :</p>
 
-        <a href="/Melanie/" class="home-button" onclick="goHome()">
+        <a href="/Melanie/" class="home-button" onclick="goHome(); return false;">
             🏠 Retour à l'accueil
         </a>
     </div>
-
-    <script>
-        function goHome() {
-            // Redirection immédiate vers la page d'accueil
-            var l = window.location;
-            window.location.href = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/Melanie/';
-        }
-    </script>
 </body>
 
 </html>
