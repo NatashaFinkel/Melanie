@@ -18,7 +18,7 @@ function Footer() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={`${baseUrl}assets/youtube-logo.svg`} alt="Logo YouTube"></img>
+        <img src={`${baseUrl}assets/youtube-logo.webp`} alt="Logo YouTube"></img>
       </a>
       <a
         href="https://www.facebook.com/GuidanSesMelanie"
@@ -26,7 +26,7 @@ function Footer() {
         rel="noopener noreferrer"
       >
         <img
-          src={`${baseUrl}assets/facebook-logo.svg`}
+          src={`${baseUrl}assets/facebook-logo.webp`}
           alt="Logo Facebook"
         ></img>
       </a>

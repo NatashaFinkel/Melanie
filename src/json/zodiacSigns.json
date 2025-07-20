@@ -1,84 +1,84 @@
 [
     {
         "zodiacSign": "Bélier",
-        "zodiacSignImg": "assets/zodiac/belier.jpg",
+        "zodiacSignImg": "assets/zodiac/belier.webp",
         "zodiacSignAlt": "bélier",
         "start": "21-03",
         "end": "19-04"
     },
     {
         "zodiacSign": "Taureau",
-        "zodiacSignImg": "assets/zodiac/taureau.jpg",
+        "zodiacSignImg": "assets/zodiac/taureau.webp",
         "zodiacSignAlt": "taureau",
         "start": "20-04",
         "end": "20-05"
     },
     {
         "zodiacSign": "Gémeaux",
-        "zodiacSignImg": "assets/zodiac/gemeaux.jpg",
+        "zodiacSignImg": "assets/zodiac/gemeaux.webp",
         "zodiacSignAlt": "gémeaux",
         "start": "21-05",
         "end": "21-06"
     },
     {
         "zodiacSign": "Cancer",
-        "zodiacSignImg": "assets/zodiac/cancer.png",
+        "zodiacSignImg": "assets/zodiac/cancer.webp",
         "zodiacSignAlt": "cancer",
         "start": "22-06",
         "end": "22-07"
     },
     {
         "zodiacSign": "Lion",
-        "zodiacSignImg": "assets/zodiac/lion.jpg",
+        "zodiacSignImg": "assets/zodiac/lion.webp",
         "zodiacSignAlt": "lion",
         "start": "23-07",
         "end": "22-08"
     },
     {
         "zodiacSign": "Vierge",
-        "zodiacSignImg": "assets/zodiac/vierge.png",
+        "zodiacSignImg": "assets/zodiac/vierge.webp",
         "zodiacSignAlt": "vierge",
         "start": "23-08",
         "end": "22-09"
     },
     {
         "zodiacSign": "Balance",
-        "zodiacSignImg": "assets/zodiac/balance.png",
+        "zodiacSignImg": "assets/zodiac/balance.webp",
         "zodiacSignAlt": "balance",
         "start": "23-09",
         "end": "23-10"
     },
     {
         "zodiacSign": "Scorpion",
-        "zodiacSignImg": "assets/zodiac/scorpion.jpg",
+        "zodiacSignImg": "assets/zodiac/scorpion.webp",
         "zodiacSignAlt": "scorpion",
         "start": "24-10",
         "end": "22-11"
     },
     {
         "zodiacSign": "Sagittaire",
-        "zodiacSignImg": "assets/zodiac/sagittaire.jpg",
+        "zodiacSignImg": "assets/zodiac/sagittaire.webp",
         "zodiacSignAlt": "sagittaire",
         "start": "23-11",
         "end": "22-12"
     },
     {
         "zodiacSign": "Capricorne",
-        "zodiacSignImg": "assets/capricorne.jpg",
+        "zodiacSignImg": "assets/capricorne.webp",
         "zodiacSignAlt": "capricorne",
         "start": "23-12",
         "end": "20-01"
     },
     {
         "zodiacSign": "Verseau",
-        "zodiacSignImg": "assets/zodiac/verseau.jpg",
+        "zodiacSignImg": "assets/zodiac/verseau.webp",
         "zodiacSignAlt": "verseau",
         "start": "21-01",
         "end": "19-02"
     },
     {
         "zodiacSign": "Poisson",
-        "zodiacSignImg": "assets/zodiac/poissons.jpeg",
+        "zodiacSignImg": "assets/zodiac/poissons.webp",
         "zodiacSignAlt": "poisson",
         "start": "20-02",
         "end": "20-03"

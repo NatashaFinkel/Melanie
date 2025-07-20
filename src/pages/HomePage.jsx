@@ -9,7 +9,7 @@ function HomePage() {
       <section className="center-display">
         <div className="center-display">
           <img
-            src={`${baseUrl}assets/photo-melanie.png`}
+            src={`${baseUrl}assets/photo-melanie.webp`}
             alt="Mélanie"
             className="presentation-picture"
           ></img>
