@@ -10,13 +10,12 @@ function NotFoundPage() {
   return (
     <main className="not-found-page">
       <div className="error-container">
-        <h2 className="error-title">Erreur 404 !</h2>
-        <h3 className="error-message">
-          La page que vous recherchez n'existe pas.
-        </h3>
-        <p>Cliquez sur le bouton ci-dessous pour retourner à l'accueil :</p>
+        <h2 className="error-title">Oops !</h2>
+        <p className="error-message">
+          La page que vous cherchez n'existe pas.
+        </p>
         <button className="home-button" onClick={handleGoHome}>
-          Page d'accueil
+          Retour à la page d'accueil
         </button>
       </div>
     </main>

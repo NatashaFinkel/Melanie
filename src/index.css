@@ -696,6 +696,7 @@ footer img:hover {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-weight: 700;
   color: var(--primary-color);
+  justify-self: center;
 }
 
 .not-found-page .error-message {
@@ -706,9 +707,9 @@ footer img:hover {
 }
 
 .not-found-page .home-button {
-  background: rgba(255, 255, 255, 0.2);
   border: 2px solid var(--primary-color);
-  color: var(--primary-color);
+  color: black;
+  background: hsla(0, 0%, 100%, 0.3);
   padding: 15px 30px;
   font-size: 1.2rem;
   font-family: 'Lora', serif;
@@ -721,9 +722,7 @@ footer img:hover {
 }
 
 .not-found-page .home-button:hover {
-  background: rgba(255, 255, 255, 0.3);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Responsive pour la page 404 */
