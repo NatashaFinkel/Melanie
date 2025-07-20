@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { getAssetUrl } from "../utils/assetUtils";
 import Modal from "./Modal";
 
 const Card = ({ cards }) => {
@@ -21,7 +22,7 @@ const Card = ({ cards }) => {
           onClick={() => handleCardClick(card)}
         >
           <div>
-            <img src={card.imgSrc} alt={card.imgAlt} />
+            <img src={getAssetUrl(card.imgSrc)} alt={card.imgAlt} />
           </div>
           <h3>{card.name}</h3>
           <p>{card.cardDescription}</p>

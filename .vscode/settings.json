@@ -1,0 +1,18 @@
+{
+    "typescript.preferences.includePackageJsonAutoImports": "off",
+    "typescript.validate.enable": false,
+    "javascript.validate.enable": false,
+    "typescript.surveys.enabled": false,
+    "typescript.suggest.autoImports": false,
+    "files.exclude": {
+        "node_modules/**": true
+    },
+    "search.exclude": {
+        "node_modules/**": true
+    },
+    "typescript.preferences.useLabelDetailsInCompletionEntries": false,
+    "problems.showCurrentInStatus": false,
+    "typescript.problemMatchers": {
+        "$tsc": false
+    }
+}

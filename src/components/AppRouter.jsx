@@ -11,10 +11,14 @@ const DisclaimerPage = lazy(() => import("../pages/DisclaimerPage"));
 const ContactPage = lazy(() => import("../pages/ContactPage"));
 const CGUPage = lazy(() => import("../pages/CGUPage"));
 const CGVPage = lazy(() => import("../pages/CGVPage"));
+const NotFoundPage = lazy(() => import("../pages/NotFoundPage"));
 
 const AppRouter = () => {
+  const basename = import.meta.env.DEV ? "/" : "/Melanie";
+
   return (
     <Router
+      basename={basename}
       future={{
         v7_startTransition: true,
         v7_relativeSplatPath: true,
@@ -30,6 +34,7 @@ const AppRouter = () => {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/CGU" element={<CGUPage />} />
           <Route path="/CGV" element={<CGVPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
       <Footer />

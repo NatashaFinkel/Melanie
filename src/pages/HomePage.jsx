@@ -2,12 +2,14 @@ import GenerateParagrahTxtContent from "../components/GenerateParagrahTxtContent
 import homePageTxt from "../json/homePage-txt.json";
 
 function HomePage() {
+  const baseUrl = import.meta.env.BASE_URL;
+
   return (
     <main>
       <section className="center-display">
         <div className="center-display">
           <img
-            src="./assets/photo-melanie.png"
+            src={`${baseUrl}assets/photo-melanie.png`}
             alt="Mélanie"
             className="presentation-picture"
           ></img>

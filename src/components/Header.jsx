@@ -14,18 +14,19 @@ const icons = {
 const Header = memo(() => {
   const location = useLocation();
   const currentPath = location.pathname;
+  const baseUrl = import.meta.env.BASE_URL;
 
   return (
     <div className="header">
       <div className="header-title">
         <img
-          src="/assets/divider.webp"
+          src={`${baseUrl}assets/divider.webp`}
           alt="séparateur décoratif"
           className="divider"
         ></img>
         <h1>Les GuidanSes de Mélanie</h1>
         <img
-          src="/assets/divider.webp"
+          src={`${baseUrl}assets/divider.webp`}
           alt="séparateur décoratif"
           className="divider second-divider"
         ></img>
