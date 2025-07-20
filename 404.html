@@ -3,45 +3,23 @@
 
 <head>
     <meta charset="utf-8">
-    <title>GuidanSes - Page introuvable</title>
-
-    <!-- Inclusion du CSS dédié pour la page 404 -->
-    <link rel="stylesheet" href="/Melanie/404.css">
+    <title>GuidanSes - Redirection...</title>
     <script>
-        // Script de redirection pour GitHub Pages avec React Router
-        // Cette fonction sera appelée SEULEMENT par le bouton, pas automatiquement
-        function goHomeWithRedirect() {
-            var segmentCount = 1; // Nombre de segments dans le chemin (pour /Melanie/)
-            var l = window.location;
-
-            // Redirection pour React Router avec les paramètres de routage
-            l.replace(
-                l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-                l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
-                l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
-                (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-                l.hash
-            );
-        }
-
-        // Fonction simple pour retourner à l'accueil
-        function goHome() {
-            var l = window.location;
-            window.location.href = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/Melanie/';
-        }
+        // Redirection automatique pour GitHub Pages avec React Router
+        var segmentCount = 1;
+        var l = window.location;
+        l.replace(
+            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+            l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
+            l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
+            (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+            l.hash
+        );
     </script>
 </head>
 
 <body>
-    <div class="error-container">
-        <h1 class="error-title">🔍 404</h1>
-        <p class="error-message">La page que vous recherchez n'existe pas ou a été déplacée.</p>
-        <p>Cliquez sur le bouton ci-dessous pour retourner à l'accueil :</p>
-
-        <a href="/Melanie/" class="home-button" onclick="goHome(); return false;">
-            🏠 Retour à l'accueil
-        </a>
-    </div>
+    <!-- Redirection en cours... -->
 </body>
 
 </html>
