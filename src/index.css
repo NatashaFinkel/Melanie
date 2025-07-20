@@ -104,7 +104,6 @@ a {
   gap: 4%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 
 .nav-icon {
@@ -112,10 +111,13 @@ a {
 }
 
 .nav-bar,
+.center-display,
 .main-content,
+.presentation-txt,
 .card,
 .modal-overlay,
 .disclaimer-page,
+.astroSignPage-main-content,
 footer {
   align-items: center;
 }
@@ -131,6 +133,8 @@ footer,
 }
 
 .nav-bar,
+h2,
+.presentation-picture,
 .card:hover,
 .disclaimerDiv,
 .disclaimer-page-recap {
@@ -158,7 +162,6 @@ main {
 .center-display {
   gap: 50px;
   justify-self: center;
-  align-items: center;
 }
 
 .main-content {
@@ -192,8 +195,14 @@ main {
 
 h2 {
   margin: 0px;
-  text-transform: uppercase;
   font-size: 20px;
+  border: 1px solid white;
+  padding: 10px;
+  width: fit-content;
+}
+
+.presentation-txt h2 {
+  margin-bottom: 20px;
 }
 
 .prestation-details-div,
@@ -368,7 +377,6 @@ h4 {
 
 .astroSignPage-main-content {
   gap: 50px;
-  align-items: center;
   display: flex;
   flex-direction: column;
 }
@@ -407,6 +415,7 @@ h4 {
   font-weight: normal;
   padding: 15px 0px;
   border-bottom: solid 2px var(--primary-color);
+  width: 100%;
 }
 
 .contact-details-div p {
@@ -517,7 +526,8 @@ footer img:hover {
 @media (width <=768px) {
 
   body,
-  h2 {
+  h2,
+  h3 {
     font-size: 13px;
   }
 
@@ -615,10 +625,6 @@ footer img:hover {
 
   main {
     margin: 0px 50px 100px;
-  }
-
-  .center-display {
-    align-items: center;
   }
 
   .presentation-txt {
