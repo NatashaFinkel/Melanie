@@ -1,10 +1,18 @@
-import PropTypes from "prop-types";
+import { useNavigate } from "react-router-dom";
 
 function PageOption({ pageUrl, optionClassName, pageTitle, icon, isActive }) {
+  const navigate = useNavigate();
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    navigate(pageUrl);
+  };
+
   return (
     <div className="menu-option">
       <a
         href={pageUrl}
+        onClick={handleClick}
         className={`${optionClassName ? optionClassName : ""} ${
           isActive ? "active-link" : ""
         }`}
@@ -15,10 +23,5 @@ function PageOption({ pageUrl, optionClassName, pageTitle, icon, isActive }) {
     </div>
   );
 }
-
-PageOption.propTypes = {
-  pageUrl: PropTypes.string.isRequired,
-  pageTitle: PropTypes.string.isRequired,
-};
 
 export default PageOption;

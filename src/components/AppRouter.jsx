@@ -1,13 +1,16 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { lazy, Suspense } from "react";
 import Header from "./Header";
-import HomePage from "../pages/HomePage";
-import PrestationsPage from "../pages/PrestationsPage";
-import AstroSignPage from "../pages/AstroSignPage";
-import DisclaimerPage from "../pages/DisclaimerPage";
-import ContactPage from "../pages/ContactPage";
-import CGUPage from "../pages/CGUPage";
-import CGVPage from "../pages/CGVPage";
 import Footer from "./Footer";
+
+// Lazy loading des composants de pages
+const HomePage = lazy(() => import("../pages/HomePage"));
+const PrestationsPage = lazy(() => import("../pages/PrestationsPage"));
+const AstroSignPage = lazy(() => import("../pages/AstroSignPage"));
+const DisclaimerPage = lazy(() => import("../pages/DisclaimerPage"));
+const ContactPage = lazy(() => import("../pages/ContactPage"));
+const CGUPage = lazy(() => import("../pages/CGUPage"));
+const CGVPage = lazy(() => import("../pages/CGVPage"));
 
 const AppRouter = () => {
   return (
@@ -18,15 +21,17 @@ const AppRouter = () => {
       }}
     >
       <Header />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/prestations" element={<PrestationsPage />} />
-        <Route path="/anniversaire" element={<AstroSignPage />} />
-        <Route path="/disclaimer" element={<DisclaimerPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/CGU" element={<CGUPage />} />
-        <Route path="/CGV" element={<CGVPage />} />
-      </Routes>
+      <Suspense fallback={<div>Chargement...</div>}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/prestations" element={<PrestationsPage />} />
+          <Route path="/anniversaire" element={<AstroSignPage />} />
+          <Route path="/disclaimer" element={<DisclaimerPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/CGU" element={<CGUPage />} />
+          <Route path="/CGV" element={<CGVPage />} />
+        </Routes>
+      </Suspense>
       <Footer />
     </Router>
   );

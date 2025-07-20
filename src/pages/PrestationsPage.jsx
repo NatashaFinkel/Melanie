@@ -1,9 +1,48 @@
+import { useState, useEffect, Suspense, lazy, memo } from "react";
+import { loadJSON } from "../utils/jsonLoader";
 import GenerateParagrahTxtContent from "../components/GenerateParagrahTxtContent";
-import prestationsList from "../json/prestations-list.json";
-import Card from "../components/Card";
-import cardData from "../json/card-data.json";
 
-function PrestationsPage() {
+// Lazy loading des composants
+const Card = lazy(() => import("../components/Card"));
+
+const PrestationsPage = memo(() => {
+  const [cardData, setCardData] = useState([]);
+  const [prestationsList, setPrestationsList] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Chargement asynchrone des données JSON avec cache
+    const loadData = async () => {
+      try {
+        const [cardDataModule, prestationsListModule] = await Promise.all([
+          loadJSON("card-data.json"),
+          loadJSON("prestations-list.json"),
+        ]);
+
+        if (cardDataModule) setCardData(cardDataModule);
+        if (prestationsListModule) setPrestationsList(prestationsListModule);
+      } catch (error) {
+        console.error("Erreur lors du chargement des données:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadData();
+  }, []);
+
+  const staticText = {
+    txt: "Toujours avec bienveillance, beaucoup d'écoute, dans le désir d'être utile, voire réconfortante... sans oublier dans certains cas un soupçon d'humour, car le rire, la légèreté sont autant de facteurs de dédramatisation, voire de guérison.",
+  };
+
+  if (loading) {
+    return (
+      <main>
+        <div>Chargement...</div>
+      </main>
+    );
+  }
+
   return (
     <main>
       <section className="center-display">
@@ -11,11 +50,7 @@ function PrestationsPage() {
           <h2>Tout mon savoir-faire, à votre service !</h2>
           <GenerateParagrahTxtContent
             page="disclaimerPage"
-            jsonFile={[
-              {
-                txt: "Toujours avec bienveillance, beaucoup d'écoute, dans le désir d'être utile, voire réconfortante... sans oublier dans certains cas un soupçon d'humour, car le rire, la légèreté sont autant de facteurs de dédramatisation, voire de guérison.",
-              },
-            ].map((item) => ({
+            jsonFile={[staticText].map((item) => ({
               paragraph: <>{item.txt}</>,
             }))}
             textType="p"
@@ -24,7 +59,9 @@ function PrestationsPage() {
         </div>
       </section>
       <section className="full-page-section">
-        <Card cards={cardData} />
+        <Suspense fallback={<div>Chargement des cartes...</div>}>
+          <Card cards={cardData} />
+        </Suspense>
       </section>
       <section>
         <div className="prestation-details-div">
@@ -43,6 +80,8 @@ function PrestationsPage() {
       </section>
     </main>
   );
-}
+});
+
+PrestationsPage.displayName = "PrestationsPage";
 
 export default PrestationsPage;

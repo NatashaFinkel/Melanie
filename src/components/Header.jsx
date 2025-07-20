@@ -1,8 +1,20 @@
 import { useLocation } from "react-router-dom";
+import { memo } from "react";
 import PageOption from "./PageOption";
 
-function Header() {
+// Précomputation des icônes pour éviter les créations répétées
+const icons = {
+  home: <i className="fa fa-home"></i>,
+  star: <i className="fa-solid fa-star"></i>,
+  cake: <i className="fa-solid fa-cake-candles"></i>,
+  xmark: <i className="fa-regular fa-circle-xmark"></i>,
+  envelope: <i className="fa-regular fa-envelope"></i>,
+};
+
+const Header = memo(() => {
   const location = useLocation();
+  const currentPath = location.pathname;
+
   return (
     <div className="header">
       <div className="header-title">
@@ -22,41 +34,43 @@ function Header() {
         <PageOption
           pageUrl="/"
           pageTitle="Accueil"
-          icon={<i className="fa fa-home"></i>}
-          isActive={location.pathname === "/"}
+          icon={icons.home}
+          isActive={currentPath === "/"}
         />
 
         <PageOption
           pageUrl="/prestations"
           pageTitle="Prestations"
-          icon={<i className="fa-solid fa-star"></i>}
-          isActive={location.pathname === "/prestations"}
+          icon={icons.star}
+          isActive={currentPath === "/prestations"}
         />
 
         <PageOption
           pageUrl="/anniversaire"
           pageTitle="Astro"
-          icon={<i className="fa-solid fa-cake-candles"></i>}
-          isActive={location.pathname === "/anniversaire"}
+          icon={icons.cake}
+          isActive={currentPath === "/anniversaire"}
         />
 
         <PageOption
           pageUrl="/disclaimer"
           pageTitle="Disclaimer"
-          icon={<i className="fa-regular fa-circle-xmark"></i>}
-          isActive={location.pathname === "/disclaimer"}
+          icon={icons.xmark}
+          isActive={currentPath === "/disclaimer"}
         />
 
         <PageOption
           pageUrl="/contact"
           pageTitle="Contact et réservation"
-          icon={<i className="fa-regular fa-envelope"></i>}
+          icon={icons.envelope}
           optionClassName="contact-link"
-          isActive={location.pathname === "/contact"}
+          isActive={currentPath === "/contact"}
         />
       </div>
     </div>
   );
-}
+});
+
+Header.displayName = "Header";
 
 export default Header;
