@@ -7,13 +7,13 @@ function Header() {
     <div className="header">
       <div className="header-title">
         <img
-          src="/assets/divider.png"
+          src="/assets/divider.webp"
           alt="séparateur décoratif"
           className="divider"
         ></img>
         <h1>Les GuidanSes de Mélanie</h1>
         <img
-          src="/assets/divider.png"
+          src="/assets/divider.webp"
           alt="séparateur décoratif"
           className="divider second-divider"
         ></img>
