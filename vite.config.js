@@ -48,7 +48,7 @@ export default defineConfig({
     })
   ],
   server: {
-    open: true,
+    open: '/Melanie/',
   },
   build: {
     // Optimisation pour réduire le JavaScript inutilisé

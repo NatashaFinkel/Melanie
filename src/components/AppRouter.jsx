@@ -14,7 +14,7 @@ const CGVPage = lazy(() => import("../pages/CGVPage"));
 const NotFoundPage = lazy(() => import("../pages/NotFoundPage"));
 
 const AppRouter = () => {
-  const basename = import.meta.env.DEV ? "/" : "/Melanie";
+  const basename = "/Melanie";
 
   return (
     <Router
