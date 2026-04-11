@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "title": "Déception, trahison : la paix après l'orage.",
+        "excerpt": "Que faire lorsque l'émotion nous assaille ?",
+        "content": "",
+        "image": "blog/girl-gde02c2661_1280.webp",
+        "author": "Mélanie",
+        "publishDate": "2025-05-31",
+        "category": "psycho",
+        "tags": [
+            "oracle",
+            "guidance",
+            "épanouissement"
+        ],
+        "readTime": "5 min"
+    },
+    {
+        "id": 2,
+        "title": "Les Secrets de l'Astrologie Personnalisée",
+        "excerpt": "Plongez dans l'univers fascinant de l'astrologie et apprenez à décoder les messages des astres pour votre chemin de vie",
+        "content": "L'astrologie personnalisée va bien au-delà de votre simple signe solaire. Elle révèle les nuances subtiles de votre personnalité et éclaire votre destinée unique...",
+        "image": "card-img/astro.png",
+        "author": "Mélanie",
+        "publishDate": "2025-07-18",
+        "category": "Astrologie",
+        "tags": [
+            "thème natal",
+            "personnalité",
+            "destinée"
+        ],
+        "readTime": "7 min"
+    },
+    {
+        "id": 3,
+        "title": "Méditation et Connexion Spirituelle",
+        "excerpt": "Explorez les techniques de méditation qui vous permettront d'approfondir votre connexion spirituelle et trouver la paix intérieure",
+        "content": "La méditation est une porte d'entrée vers votre moi profond. À travers des pratiques millénaires adaptées à notre époque, découvrez comment cultiver la sérénité...",
+        "image": "card-img/lotus-rose.jpg",
+        "author": "Mélanie",
+        "publishDate": "2025-07-15",
+        "category": "Spiritualité",
+        "tags": [
+            "méditation",
+            "paix intérieure",
+            "spiritualité"
+        ],
+        "readTime": "6 min"
+    },
+    {
+        "id": 4,
+        "title": "L'Énergie des Cristaux dans votre Quotidien",
+        "excerpt": "Apprenez à utiliser la puissance des cristaux pour harmoniser votre énergie et créer un environnement positif",
+        "content": "Les cristaux sont des alliés précieux dans notre quête d'harmonie. Chaque pierre possède ses propres vibrations et peut vous accompagner dans différents aspects de votre vie...",
+        "image": "card-img/enfant-couleurs.jpg",
+        "author": "Mélanie",
+        "publishDate": "2025-07-12",
+        "category": "Énergétique",
+        "tags": [
+            "cristaux",
+            "énergie",
+            "harmonie"
+        ],
+        "readTime": "4 min"
+    }
+]

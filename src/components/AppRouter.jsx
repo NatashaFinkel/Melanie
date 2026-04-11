@@ -11,6 +11,8 @@ const DisclaimerPage = lazy(() => import("../pages/DisclaimerPage"));
 const ContactPage = lazy(() => import("../pages/ContactPage"));
 const CGUPage = lazy(() => import("../pages/CGUPage"));
 const CGVPage = lazy(() => import("../pages/CGVPage"));
+const BlogPage = lazy(() => import("../pages/BlogPage"));
+const BlogArticlePage = lazy(() => import("../pages/BlogArticlePage"));
 const NotFoundPage = lazy(() => import("../pages/NotFoundPage"));
 
 const AppRouter = () => {
@@ -30,6 +32,8 @@ const AppRouter = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/prestations" element={<PrestationsPage />} />
           <Route path="/anniversaire" element={<AstroSignPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:id" element={<BlogArticlePage />} />
           <Route path="/disclaimer" element={<DisclaimerPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/CGU" element={<CGUPage />} />
